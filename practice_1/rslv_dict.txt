@@ -1,0 +1,4 @@
+127.0.0.1 localhost
+195.209.230.141 dl.spbstu.ru
+173.194.71.94 google.ru
+192.168.11.1 test
