@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Listing</title>
+</head>
+<body>
+ <h1>Листинг каталога {{ dir_name }}:</h1>
+ <table>
+  <thead>
+   <th>Имя</th>
+   <th>Размер</th>
+   <th>Дата модификации</th>
+  </thead>
+  {% for item in dir_content %}
+  <tr>
+   <td>{{ item.deep }}{{ item.dir1 }}/<a href="{{ item.dir2 }}">{{ item.dir3 }}</a>/{{ item.name }}</td>
+   <td>{{ item.size }} bytes</td>
+   <td>{{ item.time }}</td>
+  </tr>
+  {% endfor %}
+ </table>
+</body>
+</html>
+
