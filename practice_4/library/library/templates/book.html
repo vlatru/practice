@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Карточка книги</title>
+</head>
+<body>
+ <h1>{{ book }}</h1>
+ <table>
+  <tr>
+   <td>
+    {% for item in book.authors.all %}
+    <a href="{{ item.get_absolute_url }}">{{ item }}</a>, 
+    {% endfor %}
+   </td>
+  </tr>
+  <tr>
+   <td>{{ book.publisher }}</td>
+  </tr>
+  <tr>
+   <td>{{ book.publication_date }}</td>
+  </tr>
+ </table>
+</body>
+</html>
