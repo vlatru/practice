@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Карточка автора</title>
+</head>
+<body>
+ <h1>{{ author }}</h1>
+ <table>
+  {% if author.email %}
+  <tr>
+   <td>e-mail:</td>
+   <td>{{ author.email }}</td>
+  </tr>
+  {% endif %}
+ </table>
+</body>
+</html>
+
